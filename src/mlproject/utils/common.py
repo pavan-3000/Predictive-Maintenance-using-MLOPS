@@ -1,15 +1,15 @@
 import os
 import yaml
-from src.project.logger import logging
-from src.project.exception import CustomException
+from src.mlproject.logger import logging
+from src.mlproject.exception import CustomException
 import json
 import joblib
 from pathlib import Path 
 from typing import Any  
-import base64 
-from src.project.logger import logging
+
+from src.mlproject.logger import logging
 import sys
-from src.project.exception import CustomException
+from src.mlproject.exception import CustomException
 
 
 from box import ConfigBox
