@@ -1,11 +1,12 @@
 from src.mlproject.logger import logging
 from src.mlproject.exception import CustomException
 
-from src.mlproject.pipeline.data_ingestion_pipeline import IngestionPipeline
+from src.mlproject.pipeline.data_validation_pipeline import validationPipeline
+
 
 import sys
 
-
+"""
 try:
     logging.info("runnnnnnnnn")
     
@@ -14,5 +15,14 @@ try:
     
     
     logging.info("level 1 is completed susscessfully")
+except Exception as e:
+    raise CustomException(e,sys)
+"""
+
+
+try:
+    logging.info('stared level 2 data valsidaeton')
+    obj = validationPipeline()
+    obj.main()
 except Exception as e:
     raise CustomException(e,sys)

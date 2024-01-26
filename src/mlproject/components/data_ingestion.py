@@ -1,14 +1,15 @@
 from src.mlproject.logger import logging
 from src.mlproject.exception import CustomException
 
-from src.mlproject.config.configuration import DataIngestionConfigManager
+from src.mlproject.config.configuration import ConfigManger
+from src.mlproject.entity.config_entity import DataIngestionConfig
 
 import sys
 import os
 import gdown
 import zipfile
 class DataIngestion:
-    def __init__(self,config:DataIngestionConfigManager):
+    def __init__(self,config:DataIngestionConfig):
         self.config = config
     
     def Download_zip(self):

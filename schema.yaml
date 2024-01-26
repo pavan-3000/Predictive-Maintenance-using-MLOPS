@@ -1,0 +1,16 @@
+COLUMNS:
+
+  UDI                      :  int64  
+  Product ID               :  object 
+  Type                     :  object 
+  Air temperature [K]      :  float64
+  Process temperature [K]  :  float64
+  Rotational speed [rpm]   :  int64  
+  Torque [Nm]              :  float64
+  Tool wear [min]          :  int64  
+    
+  Failure Type             :  object
+
+
+Targer:
+ Target:  int64
